@@ -1,6 +1,6 @@
 :root {
-  --main-font: 'Roboto', sans-serif;
-  --logo-font: 'Raleway', sans-serif;
+  --main-font: "Roboto", sans-serif;
+  --logo-font: "Raleway", sans-serif;
   --prymari-text-color: #757575;
   --title-text-color: #212121;
   --focus-color: #2196f3;
@@ -129,8 +129,8 @@ img {
 }
 
 .link {
-  padding-top: 20px;
-  padding-bottom: 20px;
+  padding-top: 32px;
+  padding-bottom: 32px;
 }
 
 .contact-mail {
@@ -158,12 +158,13 @@ img {
 .hero {
   background: var(--footer-bgc);
   text-align: center;
-  height: 600px;
 }
 
 .hero-title {
   margin-bottom: 40px;
-  padding: 200px 252px 0 252px;
+  padding-top: 200px;
+  padding-right: 252px;
+  padding-left: 252px;
 
   font-family: var(--main-font);
   font-weight: 900;
@@ -172,6 +173,10 @@ img {
   text-align: center;
   letter-spacing: 0.06em;
   color: var(--main-bgc);
+}
+
+.hero-btn {
+  padding-bottom: 200px;
 }
 
 .button {
@@ -198,14 +203,14 @@ img {
 /* ================  Описание работы ================ */
 .features-list {
   display: flex;
+  padding-top: 94px;
 }
 
 .features-item:not(:last-child) {
-  padding-right: 30px;
+  margin-right: 30px;
 }
 
 .features-list .title {
-  padding-top: 94px;
   margin-bottom: 10px;
 
   font-family: var(--main-font);
@@ -216,7 +221,6 @@ img {
 }
 
 .features-list .title-text {
-  padding-bottom: 94px;
   font-family: var(--main-font);
   font-weight: 400;
   line-height: 1.71;
@@ -227,9 +231,9 @@ img {
 
 .work-list {
   display: flex;
-  padding-bottom: 94px;
   margin-right: -30px;
   margin-top: -30px;
+  margin-bottom: 94px;
 }
 
 .work-item {
@@ -272,9 +276,13 @@ img {
     0px 2px 1px rgba(0, 0, 0, 0.2);
 }
 
+.worker-info {
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
 .worker-name {
   margin-bottom: 10px;
-  padding-top: 30px;
 
   font-family: var(--main-font);
   font-weight: 500;
@@ -285,8 +293,6 @@ img {
 }
 
 .worker-specialty {
-  padding-bottom: 30px;
-
   font-family: var(--main-font);
   font-weight: 400;
   font-size: 16px;
@@ -304,8 +310,11 @@ img {
   flex-direction: column;
 }
 
-.contact-list {
+.adress {
   margin-top: 20px;
+}
+
+.contact-list {
   padding-bottom: 60px;
 }
 
@@ -344,7 +353,7 @@ img {
 .btn {
   display: flex;
   justify-content: center;
-  padding-top: 100px;
+  margin-top: 94px;
 }
 
 .btn-nav:not(:last-child) {
@@ -363,8 +372,10 @@ img {
   line-height: 1.62;
   text-align: center;
   letter-spacing: 0.03em;
+
   color: var(--title-text-color);
   background: var(--team-selection-bgc);
+  border: none;
 }
 
 .modul-button:hover,
@@ -393,16 +404,14 @@ img {
 }
 
 .portfolio-content {
+  padding: 20px 24px 20px 24px;
   border: 1px solid #eeeeee;
-  /* box-sizing: border-box;
-  border-top: none; */
-  border-top-left-radius: 1px;
+  box-sizing: border-box;
+  border-top: none;
 }
 
 .portfolio .portfolio-title {
-  padding-left: 24px;
   margin-bottom: 4px;
-  margin-top: 20px;
 
   font-family: var(--main-font);
   font-weight: 700;
@@ -413,9 +422,6 @@ img {
 }
 
 .portfolio .portfolio-text {
-  padding-left: 24px;
-  padding-bottom: 20px;
-
   font-family: var(--main-font);
   font-weight: 400;
   font-size: 16px;
