@@ -209,8 +209,9 @@ img {
 
 .features-list {
   display: flex;
-  padding-top: -30px;
-  padding-left: -30px;
+  flex-wrap: wrap;
+  /* margin-top: -30px;
+  margin-left: -30px; */
 }
 
 .features-item:not(:last-child) {
@@ -218,10 +219,11 @@ img {
 }
 
 .featuers-item {
-  padding-top: 30px;
-  padding-left: 30px;
   flex-basis: calc(100% / 4 - 30px);
+  margin-top: 30px;
+  margin-left: 30px;
   max-width: 270px;
+  height: auto;
 }
 
 .features-list .title {
