@@ -162,10 +162,13 @@ img {
   padding-top: 200px;
 }
 
+.hero-theme {
+  padding-right: 300px;
+  padding-left: 300px;
+}
+
 .hero-title {
   margin-bottom: 40px;
-  padding-right: 252px;
-  padding-left: 252px;
 
   font-family: var(--main-font);
   font-weight: 900;
@@ -198,17 +201,32 @@ img {
 /* ================  Конец обложки ================ */
 
 /* ================  Описание работы ================ */
+
+.selection {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
 .features-list {
   display: flex;
-  padding-top: 94px;
+  padding-top: -30px;
+  padding-left: -30px;
 }
 
 .features-item:not(:last-child) {
   margin-right: 30px;
 }
 
+.featuers-item {
+  padding-top: 30px;
+  padding-left: 30px;
+  flex-basis: calc(100% / 4 - 30px);
+  max-width: 270px;
+}
+
 .features-list .title {
   margin-bottom: 10px;
+  max-width: 270px;
 
   font-family: var(--main-font);
   font-weight: 700;
@@ -218,6 +236,7 @@ img {
 }
 
 .features-list .title-text {
+  max-width: 270px;
   font-family: var(--main-font);
   font-weight: 400;
   line-height: 1.71;
@@ -226,22 +245,23 @@ img {
 
 /* ================ КОНЕЦ описание работы ================ */
 
+.work-img {
+  padding-bottom: 94px;
+}
+
 .work-list {
   display: flex;
   margin-right: -30px;
   margin-top: -30px;
-  margin-bottom: 94px;
 }
 
 .work-item {
-  flex-basis: calc(100% / 3 - 30px);
   margin-right: 30px;
   margin-top: 30px;
 }
 
 .second-title {
   margin-bottom: 50px;
-  padding-top: 94px;
 
   font-family: var(--main-font);
   font-weight: 700;
@@ -254,13 +274,14 @@ img {
 /* ================ Team Selection ================ */
 .team-section {
   display: flex;
+  padding-top: 94px;
+  padding-bottom: 94px;
   background: var(--team-selection-bgc);
 }
 
 .team {
   display: flex;
   text-align: center;
-  padding-bottom: 94px;
   margin-left: -30px;
   margin-top: -30px;
 }
@@ -302,6 +323,7 @@ img {
 .footer {
   background: var(--footer-bgc);
   padding-top: 60px;
+  padding-bottom: 60px;
 }
 .footer .container {
   flex-direction: column;
@@ -309,10 +331,6 @@ img {
 
 .adress {
   margin-top: 20px;
-}
-
-.contact-list {
-  padding-bottom: 60px;
 }
 
 .logos {
@@ -350,7 +368,8 @@ img {
 .btn {
   display: flex;
   justify-content: center;
-  margin-top: 94px;
+  margin-bottom: 50px;
+  padding-top: 94px;
 }
 
 .btn-nav:not(:last-child) {
@@ -361,7 +380,6 @@ img {
 .modul-button {
   padding: 6px 12px;
   border-radius: 4px;
-  margin-bottom: 50px;
 
   font-family: var(--main-font);
   font-weight: 500;
